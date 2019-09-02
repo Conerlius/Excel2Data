@@ -52,12 +52,17 @@
       <component id="4e22" class="javax.swing.JList" binding="list1" default-binding="true">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="-1" height="300"/>
+            <minimum-size width="600" height="300"/>
+            <preferred-size width="600" height="-1"/>
+            <maximum-size width="600" height="-1"/>
           </grid>
         </constraints>
         <properties>
+          <fixedCellWidth value="300"/>
+          <layoutOrientation value="2"/>
           <model/>
           <selectionMode value="0"/>
+          <visibleRowCount value="10"/>
         </properties>
       </component>
     </children>

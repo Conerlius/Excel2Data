@@ -1,12 +1,13 @@
 package com.conerlius.WDTools;
 
 import javax.swing.*;
+import javax.swing.event.ListDataListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
 
-public class MainView {
+public class MainView extends JFrame {
     public JPanel mainPanel;
     public JTextField textField1;
     private JButton button1;
@@ -26,7 +27,10 @@ public class MainView {
                 if (file == null)
                     return;
                 viewData.SetExcelsPath(file.getPath());
+
             }
         });
+        list1.setModel(viewData);
+        list1.setCellRenderer(new CheckBoxListRenderer());
     }
 }
